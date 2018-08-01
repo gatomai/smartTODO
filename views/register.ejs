@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+        <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+        <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+        <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+        <link rel="stylesheet" href="/styles/register.css" type="text/css" />
+
+        <script type="text/javascript" src="/scripts/app.js"></script>
+    </head>
+
+    <body>
+      <header class="header">
+        <nav class="header-nav">
+          <h1 class="header-nav_title">To Do List</h1>
+          <form class="header-nav_login" method="POST" action="/login">
+            <input class="nav-login_username" type="username" name="username" placeholder="Username"/>
+            <input class="nav-login_password" type="password" name="password" placeholder="Password"/>
+            <button class="nav-login_button">Login</button>
+          </form>
+        </nav>
+      </header>
+
+      <h1>Register</h1>
+      <div>Please provide a few details about yourself before you begin</div>
+
+      <section class="register">
+        <form class="register-form" action="/register" method="POST">
+          <input class="firstname" type="text" name="firstName" placeholder="First Name" />
+          <input class="lastname" type="text" name="lastName" placeholder="Last Name" />
+          <input class="email" type="email" name="email" placeholder="Email" />
+          <input class="username" type="username" name="username" placeholder="Username">
+          <input class="password" type="password" name="password" placeholder="Password" />
+          <input class="telephone" type="tel" name="telephone" placeholder="Telephone Number">
+          <input class="address" type="text" name="address" placeholder="Address">
+          <input class="birthdate" type="date" name="birthdate">
+          <button class="register-form_button">Register</button> <!-- Agree to Terms -->
+        </form>
+      </section>
+    </body>
+</html>

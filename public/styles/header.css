@@ -1,0 +1,57 @@
+.header {
+  background-color: #2E75D6;
+  width: 100%;
+}
+
+.header .header-nav {
+  align-items: center;
+  border-bottom: 1px solid #092956;
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.header .header-nav .header-nav_title {
+  color: #fff;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header .header-nav .header-nav_login {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+}
+
+.header .header-nav .header-nav_login .nav-login_username, .header .header-nav .header-nav_login .nav-login_password {
+  border-radius: 5px;
+  border: 1px solid #092956;
+  margin-right: 15px;
+}
+
+.header .header-nav .header-nav_login .nav-login_button {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.header .header-nav .header-nav_register {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .header-nav .header-nav_register div {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.header .header-nav .header-nav_register .nav-register_button {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+}

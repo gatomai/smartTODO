@@ -1,0 +1,151 @@
+body {
+  background-color: #eee;
+}
+
+body .header {
+  align-items: center;
+  background-color: #2E75D6;
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+}
+
+body .header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+body .header form {
+  display: block;
+}
+
+body .header form .header-logout {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 3px;
+}
+
+body .taskbar {
+  margin: 25px auto;
+  width: 50%;
+}
+
+body .taskbar .taskbar-title {
+  display: block;
+}
+
+body .taskbar .taskbar-title .taskbar-title_task {
+  font-size: 3rem;
+  text-align: center;
+}
+
+body .taskbar .taskbar-form {
+  font-size: 2rem;
+  margin: 0 25%;
+}
+
+body .taskbar .taskbar-form .taskbar-form_input {
+  border: 1px solid black;
+  border-radius: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+body main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+body main .tasks {
+  width: 22%;
+}
+
+body main .tasks .films, body main .tasks .books, body main .tasks .restaurants, body main .tasks .products {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+body main .tasks .films h2, body main .tasks .books h2, body main .tasks .restaurants h2, body main .tasks .products h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+body main .tasks .films .task, body main .tasks .books .task, body main .tasks .restaurants .task, body main .tasks .products .task {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px auto;
+  max-width: 90%;
+  min-width: 90%;
+}
+
+body main .tasks .films .task .task_header, body main .tasks .books .task .task_header, body main .tasks .restaurants .task .task_header, body main .tasks .products .task .task_header {
+  align-content: center;
+  display: flex;
+  margin: 10px;
+}
+
+body main .tasks .films .task .task_header h3, body main .tasks .books .task .task_header h3, body main .tasks .restaurants .task .task_header h3, body main .tasks .products .task .task_header h3 {
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: underline;
+}
+
+body main .tasks .films .task .task_info, body main .tasks .books .task .task_info, body main .tasks .restaurants .task .task_info, body main .tasks .products .task .task_info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 10px;
+}
+
+body main .tasks .films .task .task_info p, body main .tasks .books .task .task_info p, body main .tasks .restaurants .task .task_info p, body main .tasks .products .task .task_info p {
+  margin: 0;
+  padding: 0;
+}
+
+body main .tasks .films .task .buttons, body main .tasks .books .task .buttons, body main .tasks .restaurants .task .buttons, body main .tasks .products .task .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+body main .tasks .films .task .buttons .button-important, body main .tasks .books .task .buttons .button-important, body main .tasks .restaurants .task .buttons .button-important, body main .tasks .products .task .buttons .button-important {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+body main .tasks .films .task .buttons .button-complete, body main .tasks .books .task .buttons .button-complete, body main .tasks .restaurants .task .buttons .button-complete, body main .tasks .products .task .buttons .button-complete {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+body main .tasks .films .task .buttons .button-delete, body main .tasks .books .task .buttons .button-delete, body main .tasks .restaurants .task .buttons .button-delete, body main .tasks .products .task .buttons .button-delete {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+body main .tasks .films .important, body main .tasks .books .important, body main .tasks .restaurants .important, body main .tasks .products .important {
+  border: 3px solid #000;
+  font-weight: bold;
+}
+
+body main .tasks .films .completed, body main .tasks .books .completed, body main .tasks .restaurants .completed, body main .tasks .products .completed {
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px auto;
+  max-width: 90%;
+  min-width: 90%;
+}

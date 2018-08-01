@@ -1,0 +1,151 @@
+body {
+  background-color: #eee;
+
+  .header {
+    align-items: center;
+    background-color: #2E75D6;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    form {
+      display: block;
+
+      .header-logout {
+        border: 1px solid black;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 2rem;
+        margin: 0 auto;
+        padding: 3px;
+      }
+    }
+  }
+
+  .taskbar {
+    margin: 25px auto;
+    width: 50%;
+
+    .taskbar-title {
+      display: block;
+
+      .taskbar-title_task {
+        font-size: 3rem;
+        text-align: center;
+      }
+    }
+
+    .taskbar-form {
+      font-size: 2rem;
+      margin: 0 25%;
+
+      .taskbar-form_input {
+        border: 1px solid black;
+        border-radius: 25px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    .tasks {
+      width: 22%;
+
+      .films, .books, .restaurants, .products {
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          text-align: center;
+          text-decoration: underline;
+        }
+
+        .task {
+          background-color: #fff;
+          border: 1px solid black;
+          border-radius: 5px;
+          margin: 10px auto;
+          max-width: 90%;
+          min-width: 90%;
+
+          .task_header {
+            align-content: center;
+            display: flex;
+            margin: 10px;
+
+            h3 {
+              margin: 0 auto;
+              padding: 0;
+              text-decoration: underline;
+            }
+          }
+
+          .task_info {
+            display: flex;
+            justify-content: space-between;
+            max-width: 100%;
+            margin: 10px;
+
+            p {
+              margin: 0;
+              padding: 0;
+            }
+          }
+
+          .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+
+            .button-important {
+              background-color: #fff;
+              border: 1px solid black;
+              border-radius: 5px;
+            }
+
+            .button-complete {
+              background-color: #fff;
+              border: 1px solid black;
+              border-radius: 5px;
+            }
+
+            .button-delete {
+              background-color: #fff;
+              border: 1px solid black;
+              border-radius: 5px;
+            }
+          }
+        }
+
+        .important {
+          border: 3px solid #000;
+          font-weight: bold;
+        }
+
+        .completed {
+          background-color: #000;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          color: #fff;
+          margin: 10px auto;
+          max-width: 90%;
+          min-width: 90%;
+        }
+      }
+    }
+  }
+}

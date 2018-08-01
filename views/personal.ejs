@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Personal User Page</title>
+
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/personal.css" type="text/css" />
+
+    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>To Do List</h1>
+      <div></div>
+      <form action="/logout" method="POST">
+        <button class="header-logout">Logout</button>
+      </form>
+    </header>
+
+      <section>
+        <div class="taskbar">
+          <div class="taskbar-title">
+            <h1 class="taskbar-title_task">Enter a Task</h1>
+          </div>
+          <div class="taskbar-form">
+            <form class="searchBar" method="POST" action="/tasks">
+              <input id="newTask" class="taskbar-form_input" type="text">
+            </form>
+          </div>
+        </div>
+      </section>
+
+    <main>
+      <section class="tasks">
+        <div class="films">
+          <h2>Films</h2>
+          <!-- <div id="newTask" class="task"></div> -->
+          <% data.filter(t => t.category_name === 'To Watch').forEach((task) => { %>
+            <%- include('./_partials/_taskCard.ejs', { task: task }) %>
+          <% }) %>
+        </div>
+      </section>
+
+      <section class="tasks">
+        <div class="restaurants">
+          <h2>Restaurants</h2>
+          <!-- <div id="newTask" class="task"></div> -->
+          <% data.filter(t => t.category_name === 'To Eat').forEach((task) => { %>
+            <%- include('./_partials/_taskCard.ejs', { task: task }) %>
+          <% }) %>
+        </div>
+      </section>
+
+      <section class="tasks">
+        <div class="books">
+          <h2>Books</h2>
+          <!-- <div id="newTask" class="task"></div> -->
+          <% data.filter(t => t.category_name === 'To Read').forEach((task) => { %>
+            <%- include('./_partials/_taskCard.ejs', { task: task }) %>
+          <% }) %>
+        </div>
+      </section>
+
+      <section class="tasks">
+        <div class="products">
+          <h2>Products</h2>
+          <!-- <div id="newTask" class="task"></div> -->
+          <% data.filter(t => t.category_name === 'To Buy').forEach((task) => { %>
+            <%- include('./_partials/_taskCard.ejs', { task: task }) %>
+          <% }) %>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
